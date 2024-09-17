@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro "conocimiento - Times"</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .feBlend {
+            background-color: burlywood;
+            border: 2px solid darkblue;
+            border-radius: 20px;
+        }
+
+        section {
+            background-color: white;
+        }
+
+        .img-logo {
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section class="text-center">
+        <div><h1>Formulario de conocimiento - Times</h1></div>
+        <div><img class="img-logo" src="https://scontent.fbga2-1.fna.fbcdn.net/v/t39.30808-6/460141092_8803915212952170_5284031748569301723_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHloscgCg0Rl1pnsoVTXuE_gaixb_ZjQ2-BqLFv9mNDb2FX0CmbWBEBkPpbtBp0IXkb5QxihKZcvZPJNGfTJvZ4&_nc_ohc=6WqBbmzd9gUQ7kNvgGGe6KR&_nc_ht=scontent.fbga2-1.fna&_nc_gid=AgKasTE_Ik5k5QwGlLV5c3a&oh=00_AYBbbxJwOMDAK1HWNnuNXTNS2c7b_bSrltWm5UXkRZjdlQ&oe=66EE75EC" alt="Logo">
+        </div>
+    </section>
+    <section class="container mt-4">
+        <fieldset class="feBlend p-4">
+            <legend>Information about the usuario</legend>
+            <form>
+                <div class="mb-3">
+                    <label for="fileInput" class="form-label">Selecciona una foto:</label>
+                    <input type="file" id="fileInput" name="fileInput" accept="image/*" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="Subir Foto" class="btn btn-primary">
+                </div>
+            </form>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="idNumber" class="form-label">ID Number</label>
+                    <input type="text" id="idNumber" name="idNumber" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="knowledge" class="form-label">How much knowledge do you have in telling or writing the time?</label>
+                    <input type="range" id="knowledge" name="knowledge" min="0" max="10" step="1" value="0" class="form-range" oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="role" class="form-label">Role</label>
+                    <select id="role" name="role" class="form-select">
+                        <option value="student">Student</option>
+                        <option value="professor">Professor</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="option" class="form-label">Select an option</label>
+                    <select id="option" name="id" class="form-select">
+                        <option value="passport">Passport Number</option>
+                        <option value="permit">Temporary Permit</option>
+                        <option value="number">Number</option>
+                    </select>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <section class="container mt-4 text-center">
+        
+        <form action="C:\Users\ANDRES\Documents\TEMA HTML\FORMULARIO_PSUDOS\formulario moelo #02 -  modificado\tex.html">
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">Inicio</button>
+        </form>
+        <form action="C:\Users\ANDRES\Documents\TEMA HTML\FORMULARIO_PSUDOS\formulario moelo #02 -  modificado\Enviar.html">
+            <button type="button" class="btn btn-success" onclick="exit()">Enviar</button>
+        </form>
+    </section>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
