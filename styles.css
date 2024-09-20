@@ -1,0 +1,137 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif; /* Define la fuente de la página */
+    background-color: #c7fbf7 ; /* Establece el color de fondo de la página */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el relleno predeterminado del navegador */
+}
+
+main {
+    max-width: 1620px; /* Establece el ancho máximo del contenido principal */
+    margin: 0 auto; /* Centra el contenido principal horizontalmente */
+    padding: 5px; /* Añade un relleno interno de 20px */
+}
+
+header {
+    background-color:  #c7fbf7 ; /* Establece el color de fondo del encabezado */
+    color: black; /* Establece el color del texto del encabezado */
+    padding: 5px; /* Añade un relleno interno de 10px */
+    text-align: center; /* Centra el texto del encabezado */
+    border-radius: 5px; /* Redondea las esquinas del encabezado */
+    margin-bottom: 5px; /* Añade un margen inferior de 20px */
+}
+
+.container {
+    display: grid; /* Utiliza un diseño de cuadrícula */
+    grid-template-columns: 1fr 5fr 1fr; /* Define tres columnas con proporciones 1:5:1 */
+    gap: px; /* Añade un espacio de 5px entre las columnas */
+}
+
+nav {
+    background-color:#fff; /* Establece el color de fondo de la navegación */
+    border: 1px  solid darkgray;
+    color: black; /* Establece el color del texto de la navegación */
+    padding: 5px; /* Añade un relleno interno de 10px */
+    border-radius: 5px; /* Redondea las esquinas de la navegación */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno interno de la lista */
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Añade un margen inferior de 10px a los elementos de la lista */
+}
+
+nav ul li ul {
+    list-style: none; /* Elimina los puntos de la sublista */
+    padding-left: 20px; /* Añade un relleno izquierdo de 20px a la sublista */
+    text-decoration: none; /* Elimina la decoración del texto */
+}
+
+nav ul li ul li {
+    margin-bottom: 5px; /* Añade un margen inferior de 5px a los elementos de la sublista */
+    text-decoration: none; /* Elimina la decoración del texto */
+}
+
+article {
+    background-color: #fff; /* Establece el color de fondo del artículo */
+    padding: 20px; /* Añade un relleno interno de 20px */
+    border-radius: 5px; /* Redondea las esquinas del artículo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra al artículo */
+}
+
+form {
+    border: 1px  solid darkgray;
+    background-color: #fff; /* Establece el color de fondo del formulario */
+    padding: 20px; /* Añade un relleno interno de 20px */
+    border-radius: 5px; /* Redondea las esquinas del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra al formulario */
+}
+
+footer {
+    border: 1px  solid darkgray;
+    border-radius: 50px;
+    background-color:#fff; /* Establece el color de fondo del pie de página */
+    color: black; /* Establece el color del texto del pie de página */
+    padding: 10px; /* Añade un relleno interno de 10px */
+    text-align: center; /* Centra el texto del pie de página */
+    border-radius: 5px; /* Redondea las esquinas del pie de página */
+    margin-top: 20px; /* Añade un margen superior de 20px */
+}
+
+nav ul li ul a {
+    text-decoration: none; /* Elimina la decoración del texto de los enlaces de la sublista */
+    color: #000; /* Establece el color del texto de los enlaces de la sublista */
+}
+
+nav ul li ul a, nav ul li ul li a {
+    text-decoration: none; /* Elimina la decoración del texto de los enlaces */
+    color: black; /* Establece el color del texto de los enlaces */
+}
+
+
+/* Contenedor principal del carrusel */
+.carousel {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+/* Contenedor de las imágenes del carrusel */
+.carousel-images {
+    display: flex; /* Utiliza flexbox para alinear las imágenes en fila */
+    transition: transform 0.5s ease-in-out; /* Añade una transición suave al transformar */
+}
+
+/* Estilo de las imágenes del carrusel */
+.carousel-images img {
+    width: 100px; /* Ancho de cada imagen */
+    height: 100px; /* Altura de cada imagen */
+}
+
+/* Estilo de los botones del carrusel */
+.carousel button {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para los botones */
+    border: none; /* Sin borde */
+    color: black; /* Color del texto blanco */
+    font-size: 2rem; /* Tamaño de fuente grande */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    padding: 10px; /* Espaciado interno del botón */
+    margin: 0 10px; /* Espaciado externo para separar los botones de las imágenes */
+}
+
+article{
+    border: 1px  solid darkgray;    
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
